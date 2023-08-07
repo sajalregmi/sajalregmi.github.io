@@ -1038,25 +1038,25 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
     const prevButton = document.querySelector('.carousel-prev');
     const nextButton = document.querySelector('.carousel-next');
     const itemWidth = items[0].clientWidth;
+    const itemsInView = 3; // Number of visible images
     let position = 0;
     let autoSlideInterval;
 
     prevButton.addEventListener('click', () => {
       position += itemWidth;
-      if (position > 0) position = -(itemWidth * (items.length - 1));
+      if (position > 0) position = -(itemWidth * (items.length - itemsInView));
       updateCarouselPosition();
     });
 
     nextButton.addEventListener('click', () => {
       position -= itemWidth;
-      if (position < -(itemWidth * (items.length - 1))) position = 0;
+      if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
       updateCarouselPosition();
     });
 
-    // Automatically slide every 3 seconds
     autoSlideInterval = setInterval(() => {
       position -= itemWidth;
-      if (position < -(itemWidth * (items.length - 1))) position = 0;
+      if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
       updateCarouselPosition();
     }, 3000);
 
@@ -1064,36 +1064,20 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
       track.style.transform = `translateX(${position}px)`;
     }
 
-    // Pause auto-slide on hover
     track.addEventListener('mouseenter', () => {
       clearInterval(autoSlideInterval);
     });
 
-    // Resume auto-slide when not hovering
     track.addEventListener('mouseleave', () => {
       autoSlideInterval = setInterval(() => {
         position -= itemWidth;
-        if (position < -(itemWidth * (items.length - 1))) position = 0;
+        if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
         updateCarouselPosition();
       }, 3000);
     });
   });
 </script>
-  <script>
-  // Materialize and jQuery Initializers
-  $(document).ready(function () {
-    $(".scrollspy").scrollSpy();
 
-    // Initialize sideNav
-    $(".button-collapse").sideNav({
-      menuWidth: 190,
-      edge: "left",
-      closeOnClick: true
-    });
-
-    
-  });
-</script>
 
   
 </body>
