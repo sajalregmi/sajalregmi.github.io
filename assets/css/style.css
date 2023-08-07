@@ -14,6 +14,11 @@
   border: 6px solid rgba(0, 77, 64, 0.4); 
   border-radius: 50% !important;
 }
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .profile-pic img {
   width: 100%;
