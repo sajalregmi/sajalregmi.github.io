@@ -325,8 +325,8 @@ Passionate about engineering and product innovation, I possess a versatile skill
       <div class="col s12">
        <div class="carousel-container">
   <div class="carousel-track">
-      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div></div>
-      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/ticket-home.png"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/ticket-landing.png"></div></div>
       <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div></div>
       <!-- Add more images as needed -->
     </div>
@@ -795,44 +795,42 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
     const nextButton = document.querySelector('.carousel-next');
     const itemWidth = items[0].clientWidth;
     const itemsInView = 3; // Number of visible images
+    const autoSlideInterval = 1500; // Auto-slide interval in milliseconds
     let position = 0;
-    let autoSlideInterval;
 
+    // Function to update carousel position
+    function updateCarouselPosition() {
+      track.style.transform = `translateX(${position}px)`;
+    }
+
+    // Function to move carousel to the next item
+    function moveNext() {
+      position -= itemWidth;
+      if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
+      updateCarouselPosition();
+    }
+
+    // Auto-slide function
+    function autoSlide() {
+      moveNext();
+      setTimeout(autoSlide, autoSlideInterval);
+    }
+
+    // Initialize auto-slide
+    setTimeout(autoSlide, autoSlideInterval);
+
+    // Event listeners for prev and next buttons
     prevButton.addEventListener('click', () => {
       position += itemWidth;
       if (position > 0) position = -(itemWidth * (items.length - itemsInView));
       updateCarouselPosition();
     });
 
-    nextButton.addEventListener('click', () => {
-      position -= itemWidth;
-      if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
-      updateCarouselPosition();
-    });
-
-    autoSlideInterval = setInterval(() => {
-      position -= itemWidth;
-      if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
-      updateCarouselPosition();
-    }, 3000);
-
-    function updateCarouselPosition() {
-      track.style.transform = `translateX(${position}px)`;
-    }
-
-    track.addEventListener('mouseenter', () => {
-      clearInterval(autoSlideInterval);
-    });
-
-    track.addEventListener('mouseleave', () => {
-      autoSlideInterval = setInterval(() => {
-        position -= itemWidth;
-        if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
-        updateCarouselPosition();
-      }, 3000);
-    });
+    nextButton.addEventListener('click', moveNext);
   });
 </script>
+
+
 
 
   
