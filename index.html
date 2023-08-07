@@ -389,14 +389,16 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
-                  <span class="card-title"><a href="https://www.linkedin.com/company/karyathalo/about/" class="teal-text hoverline">Karyathalo IT and Web Solutions</a></span>
+                  <span class="card-title"><a href="https://www.linkedin.com/company/karyathalo/about/" target="_blank"
+                     class="teal-text hoverline">Karyathalo IT and Web Solutions</a></span>
                 </p>
               </div>
             </div>
             <div class="role brown-text text-darken-2">Product Development Intern</div>
             <ul>
               <li>
-                Strategically managed project timelines, deliverables, and resource allocation in collaboration with the CEO, ensuring the successful and timely delivery of the <a href="//kathmandu.gov.np">web application for Kathmandu Metropolitan City.</a>
+                Strategically managed project timelines, deliverables, and resource allocation in collaboration with the CEO, ensuring the successful and timely delivery of the <a href="//kathmandu.gov.np" target="_blank"
+                      class="teal-text hoverline">web application for Kathmandu Metropolitan City.</a>
               </li>
               <li>
                Led requirements gathering and translated the vision into actionable goals, resulting in an anticipated 30% decrease in physical visits to Metropolitan offices.
@@ -418,13 +420,14 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href="https://play.google.com/store/apps/developer?id=NEM%C3%98+GAMES" target="_blank"><img alt="Karela Games logo"
-                    src="/assets/img/karela-games-logo.png" class="responsive-img center-block" /></a>
+                <a href="https://play.google.com/store/apps/developer?id=NEM%C3%98+GAMES" target="_blank"
+                      class="teal-text hoverline"><img alt="Karela Games logo"
+                    src="/assets/img/karela-games-logo.jpg" class="responsive-img center-block" /></a>
               </div>
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="https://play.google.com/store/apps/developer?id=NEM%C3%98+GAMES" target="_blank"
-                      class="teal-text hoverline">Karela Games (previously, Nemo Games) </a></span>
+                      class="teal-text hoverline">Karela Games</a></span>
                 </p>
               </div>
             </div>
@@ -434,7 +437,10 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
                 Executed end-to-end game design and development in C# Unity, encompassing animation design, strategic game UX decisions, image/sprite construction, and intricate game mechanics design.
               </li>
               <li>
-                Orchestrated collaborative efforts resulting in the creation of three captivating games, contributing to a remarkable 1k+ organic Play Store downloads at an early age of 17. Games - <a href="https://play.google.com/store/apps/details?id=com.NemoCorp.FrustrationPill">Frustration Pill</a>, <a href="https://play.google.com/store/apps/details?id=com.KarelaGames.HeySara">Texting and Walking</a>, <a href="https://play.google.com/store/apps/details?id=com.karelagames.newgame">Vertical Challenge</a>.
+                Orchestrated collaborative efforts resulting in the creation of three captivating games, contributing to a remarkable 1k+ organic Play Store downloads at an early age of 17. Games - <a href="https://play.google.com/store/apps/details?id=com.NemoCorp.FrustrationPill" target="_blank"
+                      class="teal-text hoverline">Frustration Pill</a>, <a href="https://play.google.com/store/apps/details?id=com.KarelaGames.HeySara" target="_blank"
+                      class="teal-text hoverline" >Texting and Walking</a>, <a href="https://play.google.com/store/apps/details?id=com.karelagames.newgame" target="_blank"
+                      class="teal-text hoverline" >Vertical Challenge</a>.
               </li>
               <li>Spearheaded product decisions, Integrated Facebook analytics to gather In-Game data, and conducted market research and competitor analysis, resulting in a 50% increase in downloads after the first update.</li>
               <li>Collaborated with a prominent Publisher - Super Developers for prototyping new concepts while implementing Agile methodologies, streamlining project workflows, and ensuring on-time delivery of games.</li>
@@ -1017,28 +1023,26 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
 
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var carousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(carousel, {
+  // Materialize and jQuery Initializers
+  $(document).ready(function () {
+    $(".scrollspy").scrollSpy();
+
+    // Initialize sideNav
+    $(".button-collapse").sideNav({
+      menuWidth: 190,
+      edge: "left",
+      closeOnClick: true
+    });
+
+    // Initialize carousels
+    $(".carousel").carousel({
       fullWidth: true,
       indicators: true
     });
   });
 </script>
+
   
 </body>
 
