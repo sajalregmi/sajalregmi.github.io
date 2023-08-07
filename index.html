@@ -330,11 +330,11 @@ Passionate about engineering and product innovation, I possess a versatile skill
       <div class="col s12">
        <div class="carousel-container">
   <div class="carousel-track">
-    <div class="carousel-item"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div>
-    <div class="carousel-item"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div>
-    <div class="carousel-item"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div>
-    <!-- Add more images as needed -->
-  </div>
+      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div></div>
+      <div class="carousel-item"><div class="carousel-image"><img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg"></div></div>
+      <!-- Add more images as needed -->
+    </div>
 </div>
 <div class="carousel-controls">
   <button class="carousel-prev">Prev</button>
@@ -1031,7 +1031,7 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 
-  <script>
+<script>
   document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.carousel-track');
     const items = document.querySelectorAll('.carousel-item');
@@ -1039,6 +1039,7 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
     const nextButton = document.querySelector('.carousel-next');
     const itemWidth = items[0].clientWidth;
     let position = 0;
+    let autoSlideInterval;
 
     prevButton.addEventListener('click', () => {
       position += itemWidth;
@@ -1052,9 +1053,30 @@ Oversaw the development of a cutting-edge platform poised to revolutionize last-
       updateCarouselPosition();
     });
 
+    // Automatically slide every 3 seconds
+    autoSlideInterval = setInterval(() => {
+      position -= itemWidth;
+      if (position < -(itemWidth * (items.length - 1))) position = 0;
+      updateCarouselPosition();
+    }, 3000);
+
     function updateCarouselPosition() {
       track.style.transform = `translateX(${position}px)`;
     }
+
+    // Pause auto-slide on hover
+    track.addEventListener('mouseenter', () => {
+      clearInterval(autoSlideInterval);
+    });
+
+    // Resume auto-slide when not hovering
+    track.addEventListener('mouseleave', () => {
+      autoSlideInterval = setInterval(() => {
+        position -= itemWidth;
+        if (position < -(itemWidth * (items.length - 1))) position = 0;
+        updateCarouselPosition();
+      }, 3000);
+    });
   });
 </script>
   <script>
