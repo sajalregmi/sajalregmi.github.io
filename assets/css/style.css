@@ -15,6 +15,7 @@
   border-radius: 50% !important;
 }
 <style>
+<style>
   .carousel-container {
     position: relative;
     overflow: hidden;
@@ -30,15 +31,16 @@
     flex: 0 0 calc(100% / 3); /* Adjust based on the number of visible images */
   }
   .carousel-image {
-    height: 200px; /* Adjust the height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
     overflow: hidden;
   }
   .carousel-image img {
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .carousel-controls {
     display: flex;
@@ -54,6 +56,8 @@
     cursor: pointer;
     margin: 0 5px;
   }
+</style>
+
 </style>
 
 
