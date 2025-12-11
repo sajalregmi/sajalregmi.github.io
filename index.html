@@ -1,869 +1,1455 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PGZH8HT");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+    <title>Sajal Regmi | Engineer & Product Developer</title>
 
-<!-- Materialize - Compiled and minified CSS-->
- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-<!-- Font Awesome Icon - CSS-->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-<!-- Custom Styles-->
-<link rel="stylesheet" href="//sajalregmi.github.io/assets/css/style.css" />
-<title>Sajal Regmi | Engineer</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Sajal Regmi - Engineer specializing in software development, product engineering, and innovation. Building impactful technologies with Node.js, React, microservices, and modern engineering practices."
+    />
+    <meta
+      name="keywords"
+      content="Sajal Regmi, engineer, software developer, product development, Node.js, React, microservices, Nepal, full-stack developer"
+    />
+    <meta name="author" content="Sajal Regmi" />
+    <meta name="robots" content="index, follow" />
 
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sajal Regmi | Engineer & Product Developer"
+    />
+    <meta
+      property="og:description"
+      content="Engineer building impactful technologies with modern software development practices"
+    />
+    <meta property="og:url" content="https://sajalregmi.github.io/" />
+    <meta property="og:site_name" content="Sajal Regmi | Engineer" />
+    <meta
+      property="article:publisher"
+      content="https://sajalregmi.github.io/"
+    />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@smilesajal" />
+    <meta name="twitter:creator" content="@smilesajal" />
+    <meta
+      name="twitter:title"
+      content="Sajal Regmi | Engineer & Product Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Software engineer and product developer building impactful technologies"
+    />
 
-    gtag('config', 'UA-126939217-2');
-  </script>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sajal Regmi | Engineer" />
-  <meta property="og:description" content="Engineer" />
-  <meta property="og:url" content="https://sajalregmi.github.io/" />
-  <meta property="og:site_name" content="Sajal Regmi | Engineer" />
-  <meta property="article:publisher" content="https://sajalregmi.github.io/" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@smilesajal" />
-  <meta name="twitter:description" content="Engineer" />
-  <meta name="twitter:url" content="https://twitter.com/smilesajal" />
-  <meta name="author" content="Sajal Regmi" />
-  <meta name="description" content="Product Engineering & Development" />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-</head>
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84"
+    />
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-126939217-2");
+    </script>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="//sajalregmi.github.io/assets/img/sajal_regmi_profile.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sajal Regmi",
+        "jobTitle": "Engineer & Product Developer",
+        "url": "https://sajalregmi.github.io/",
+        "email": "sajalregmi4@gmail.com",
+        "sameAs": [
+          "https://github.com/sajalregmi",
+          "https://linkedin.com/in/sajalregmi"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Product Development",
+          "Node.js",
+          "React",
+          "Microservices",
+          "Agile Methodologies"
+        ]
+      }
+    </script>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark black-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark black-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
+    <!-- Custom Styles -->
+    <style>
+      /* Reset & Base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark black-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
+      html {
+        scroll-behavior: smooth;
+      }
 
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark black-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark black-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #ffffff;
+        color: #1d1d1f;
+        line-height: 1.5;
+        font-weight: 400;
+        overflow-x: hidden;
+      }
 
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark black-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
+      /* Typography */
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
 
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Sajal's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://sajalregmi.com/assets/Sajal_Regmi_Resume.pdf')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Sajal's resume in a new tab" href="https://sajalregmi.com/assets/Sajal_Regmi_Resume.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
+      h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+      }
+      h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+      h3 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+      }
 
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="black-text">Sajal Regmi</a><span class="black-text">Engineer</span>
-    </div>
-  </nav>
+      a {
+        color: #0071e3;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark black-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark black-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark black-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark black-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+      a:hover {
+        text-decoration: underline;
+      }
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark black-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark black-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Sajal's Resume in a new tab"
-          href="https://sajalregmi.com/assets/Sajal_Regmi_Resume.pdf" target="_blank"
-          class="waves-effect waves-dark black-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
+      /* Container */
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
 
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="black">Sajal Regmi.</span></h2>
-              <h5 style="color:#fff">...<span class="typing" style="font-weight: 300; color:#ffffff"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>My goal is to be part of a forward-thinking team that embraces challenges and creates products with a lasting impact.</h5>
-            </div>
-            <div class="social">
-              <a href="http://linkedin.com/in/sajalregmi" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/sajalregmi/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
+      /* Header */
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        z-index: 100;
+      }
 
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        max-width: 980px;
+        margin: 0 auto;
+      }
 
-              <!-- <a href="http://linkedin.com/in/sajalregmi" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+      .nav-logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1d1d1f;
+        text-decoration: none;
+      }
 
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text black">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            An Enginner with a passion for creating great technologies.
+      .nav-menu a {
+        font-size: 0.875rem;
+        color: #1d1d1f;
+        text-decoration: none;
+        padding: 8px 0;
+        position: relative;
+      }
 
-          </h2>
-        </blockquote> -->        
-        <p>
-Passionate about engineering and product innovation, I possess a versatile skill set that includes software development, product development and project management. From an early age, I've been honing my expertise in making impactful products. Leading a team which is now very close to launching a revolutionary logistics solution for Nepal, I have a track record of overseeing large-scale projects
-          and fostering innovation through Agile methodologies. Spearheading my development team and collaborating with Kathmandu Metropolitan City, I helped develop an e-governance web application that now serves 5 million people. My goal is to be part of a forward-thinking team that embraces challenges and creates products with a positive impact.
-          Eager to contribute to the development of transformative technologies, I am committed to making a positive impact through the products I help bring to life.
-        </p>
-        <p>
-          <ul>
-            <li><b>Software Development:</b> Node.js, Express, React.js, Redux, RESTful API, MySQL database</li>
-            <li><b>Project Management:</b> Agile Methodologies, Sprint Planning, Lean Six Sigma Principles </li>
-            <li><b>Product Development:</b> Market Research and Competitor Analysis, Product Strategy and Roadmapping, User-Centered Design, Product Features Research</li>
-            <li><b>Engineering:</b> MATLAB, Python, Fusion 360, Auto CAD, SPICE</li>
+      .nav-menu a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #0071e3;
+      }
+
+      /* Hero */
+      .hero {
+        padding: 140px 0 80px;
+        text-align: center;
+        background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
+      }
+
+      .hero-code {
+        max-width: 700px;
+        margin: 0 auto 2rem;
+        background: #0b1021;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+        color: #e5e5e7;
+        text-align: left;
+      }
+
+      .terminal {
+        background: #0b1021;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .terminal-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        background: rgba(255, 255, 255, 0.04);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .dot.red {
+        background: #ff5f56;
+      }
+      .dot.yellow {
+        background: #ffbd2e;
+      }
+      .dot.green {
+        background: #27c93f;
+      }
+      .terminal-body {
+        padding: 16px 20px;
+        font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
+          monospace;
+        font-size: 0.95rem;
+        color: #e5e5e7;
+        line-height: 1.7;
+      }
+      .prompt {
+        color: #30d158;
+      }
+      .command {
+        color: #e5e5e7;
+      }
+      .output {
+        color: #9ba0b5;
+      }
+      .cursor {
+        display: inline-block;
+        width: 10px;
+        background: #e5e5e7;
+        animation: blink 1s steps(2, start) infinite;
+        height: 1.1em;
+        vertical-align: -2px;
+      }
+      @keyframes blink {
+        to {
+          visibility: hidden;
+        }
+      }
+
+      .social-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: #6ab7ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .social-link:hover {
+        text-decoration: underline;
+      }
+      .social-icon {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+      }
+
+      .hero-title {
+        margin-top: 1rem;
+        font-weight: 700;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+        color: #515154;
+        margin: 0.5rem 0 2rem;
+        font-weight: 500;
+      }
+
+      .hero-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 12px 24px;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+
+      .hero-link.primary {
+        background: #0071e3;
+        color: #ffffff;
+      }
+
+      .hero-link.primary:hover {
+        background: #0266cc;
+        text-decoration: none;
+      }
+
+      .hero-link:not(.primary) {
+        background: #f5f5f7;
+        color: #1d1d1f;
+      }
+
+      .hero-link:not(.primary):hover {
+        background: #e5e5e7;
+        text-decoration: none;
+      }
+
+      /* Sections */
+      .section {
+        padding: 80px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .section:last-child {
+        border-bottom: none;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #0071e3;
+        margin: 0.5rem auto 0;
+        border-radius: 2px;
+      }
+
+      /* Engineering Works */
+      .engineering-grid {
+        display: grid;
+        gap: 2rem;
+      }
+
+      .engineering-item {
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+      }
+
+      .engineering-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .item-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.75rem;
+        font-size: 0.875rem;
+        color: #86868b;
+      }
+
+      .item-category {
+        background: #0071e3;
+        color: #ffffff;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-weight: 500;
+      }
+
+      .item-title {
+        margin-bottom: 1rem;
+      }
+
+      .item-title a {
+        color: #1d1d1f;
+        text-decoration: none;
+      }
+
+      .item-title a:hover {
+        color: #0071e3;
+        text-decoration: none;
+      }
+
+      .item-description {
+        color: #515154;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .item-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .tag {
+        background: #f5f5f7;
+        color: #515154;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+
+      /* Open Source */
+      .opensource-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .opensource-item {
+        background: #f5f5f7;
+        border-radius: 16px;
+        padding: 2rem;
+      }
+
+      .repo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+      }
+
+      .repo-name {
+        font-size: 1.25rem;
+      }
+
+      .repo-stats {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.875rem;
+        color: #86868b;
+      }
+
+      .repo-description {
+        color: #515154;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+
+      .repo-topics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .topic {
+        background: #ffffff;
+        color: #0071e3;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+
+      /* Experience */
+      .timeline {
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: #f5f5f7;
+        border-radius: 1px;
+      }
+
+      .timeline-item {
+        position: relative;
+        margin-bottom: 3rem;
+      }
+
+      .timeline-marker {
+        position: absolute;
+        left: -2rem;
+        top: 8px;
+        width: 12px;
+        height: 12px;
+        background: #0071e3;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px #ffffff, 0 0 0 6px #f5f5f7;
+      }
+
+      .timeline-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .timeline-header {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+
+      .timeline-company a {
+        color: #1d1d1f;
+        font-size: 1.125rem;
+        font-weight: 600;
+      }
+
+      .timeline-date {
+        color: #86868b;
+        font-size: 0.875rem;
+        white-space: nowrap;
+      }
+
+      .timeline-role {
+        color: #515154;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+
+      .timeline-accomplishments {
+        list-style: none;
+        margin-bottom: 1rem;
+      }
+
+      .timeline-accomplishments li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: #515154;
+        line-height: 1.6;
+      }
+
+      .timeline-accomplishments li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #0071e3;
+        font-weight: 700;
+      }
+
+      .skills-used {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .skill-tag {
+        background: #e0f0ff;
+        color: #0071e3;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+
+      /* Footer */
+      .footer {
+        background: #f5f5f7;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+        }
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .footer-links a {
+        color: #515154;
+      }
+
+      .footer-links a:hover {
+        color: #0071e3;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav-container {
+          padding: 12px 16px;
+        }
+
+        .nav-menu {
+          gap: 1rem;
+        }
+
+        .hero {
+          padding: 120px 0 60px;
+        }
+
+        .hero-links {
+          justify-content: center;
+        }
+
+        .section {
+          padding: 60px 0;
+        }
+
+        .engineering-item,
+        .opensource-item {
+          padding: 1.5rem;
+        }
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .engineering-item,
+      .opensource-item,
+      .timeline-item {
+        animation: fadeIn 0.6s ease forwards;
+      }
+
+      /* Hide ugly content and fix rendering */
+      body > div:first-child {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <ul class="nav-menu">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#engineering">Engineering</a></li>
+            <li><a href="#opensource">Open Source</a></li>
           </ul>
-          
-        </p>
+        </div>
+      </nav>
+    </header>
 
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Sajal Regmi</h1>
+          <p class="hero-subtitle">Engineer</p>
+          <div class="hero-code terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span
+              ><span class="dot green"></span>
+              <span style="color: #9ba0b5; font-size: 0.85rem"
+                >arkios.sh — zsh</span
+              >
+            </div>
+            <div class="terminal-body">
+              <div>
+                <span class="prompt">➜</span>
+                <span class="command">status --project</span>
+              </div>
+              <div class="output">
+                currently leading
+                <a
+                  href="https://arkios.ai"
+                  target="_blank"
+                  style="color: #6ab7ff; text-decoration: none"
+                  >arkios.ai</a
+                >
+                at Karela Technologies Inc.
+              </div>
+              <div style="margin-top: 12px">
+                <span class="prompt">➜</span>
+                <span class="command">focus</span>
+              </div>
+              <div class="output">
+                LLM · AI · Infrastructure · System Architecture
+              </div>
+              <div style="margin-top: 12px">
+                <span class="prompt">➜</span>
+                <span class="command">socials</span>
+              </div>
+              <div class="output social-row">
+                <a href="mailto:sajalregmi4@gmail.com" class="social-link">
+                  <img
+                    src="/assets/img/favicon/favicon-32x32.png"
+                    alt="Email"
+                    class="social-icon"
+                  />
+                  Email
+                </a>
+                <a
+                  href="https://github.com/sajalregmi"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <img
+                    src="/assets/img/github.png"
+                    alt="GitHub"
+                    class="social-icon"
+                  />
+                  GitHub
+                </a>
+                <a
+                  href="https://linkedin.com/in/sajalregmi"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <img
+                    src="/assets/img/favicon/favicon-32x32.png"
+                    alt="LinkedIn"
+                    class="social-icon"
+                  />
+                  LinkedIn
+                </a>
+              </div>
+              <div style="margin-top: 12px">
+                <span class="prompt">➜</span> <span class="command">_</span
+                ><span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text black">Experience</h3>
+    <!-- Engineering Works Section -->
+    <section id="engineering" class="section">
       <div class="container">
+        <h2 class="section-title">Engineering Works</h2>
 
-
- <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <img alt="Creatiphe Logo"
-                    src="/assets/img/creatiphe_logo.jpg" class="responsive-img center-block" />
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="//creatiphe.com" target="_blank"
-                      class="teal-text hoverline">Creratiphe LLC</span></a>
-                </p>
-              </div>
+        <div class="engineering-grid">
+          <article class="engineering-item">
+            <div class="item-meta">
+              <span class="item-date">2025</span>
+              <span class="item-category">Real-time Collaboration</span>
             </div>
-            <div class="role brown-text text-darken-2">Entrepreneur in Residence</div>
-            <ul>
-              <li>
-               Refined business evaluation process by introducing rigorous testing strategies and clear success metrics, fostering a data-
-driven culture that supports long-term strategic investments.
-              </li>
-              <li>
-                Presented startup ideas weekly, developed business documents, worked with freelancers to develop MVPs, and implemented
-testing strategies including running targeted ad campaigns enhancing engagement and conversions by 30%
-              </li>
-              <li>Incubated a talent agency to bridge the gap between Nepalese tech talent and global opportunities with a commitment to
-building strong, future-focused teams, overseeing recruitment process for 200 candidates.</li>
-             
-              <li>Increased <a href="//happyoclock.de" target="_blank"
-                      class="teal-text hoverline">Happy O'Clock's</a> revenue by 10% by strategically integrating automation tools via Make.com streamlining work-
-flows, applying targeted retention strategies to reduce customer churn.</li>
-             
-              <li>
-                <b>Skills:</b>Product Management, Product Roadmapping, Automation Strategies, Customer Retention Strategies, Project Management
-            </ul>
-<!-- Image Carousal -->
-
-                <div class="row">
-    </div>
-            
-          </div>
-          <div class="card-action">
-            <span>May 2023 - May 2024 | Remote, Nepal </span>
-          </div>
-        </div>
-        
-
-        
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <img alt="Pudo logo"
-                    src="/assets/img/ticket-sewa-logo.png" class="responsive-img center-block" />
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="//getticketsewa.com" target="_blank"
-                      class="teal-text hoverline">Ticketsewa Pvt Ltd.</span></a>
-                </p>
-              </div>
+            <h3 class="item-title">
+              <a href="https://lecturely.ai" target="_blank" class="item-link"
+                >Enabling Realtime Doodling Feature on Lecturely.ai with Stroke
+                Level Precision</a
+              >
+            </h3>
+            <p class="item-description">
+              Deep technical exploration of implementing pixel-perfect realtime
+              doodling capabilities in a collaborative learning platform. Covers
+              stroke extraction algorithms, OT/CRDT integration for conflict
+              resolution, and performance optimization strategies for
+              buttery-smooth 60fps rendering on mobile devices.
+            </p>
+            <div class="item-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">iOS</span>
+              <span class="tag">PencilKit</span>
+              <span class="tag">Real-time</span>
+              <span class="tag">OT/CRDT</span>
             </div>
-            <div class="role brown-text text-darken-2">Co-Founder and Engineer</div>
-            <ul>
-              <li>
-                Assuming multiple roles as co-founder, product manager, and engineer, to develop a comprehensive ticketing solution for Nepal.
-              </li>
-              <li>
-                Actively engaging in REST API development using Node.js Express, implementing microservices architecture, architecting the database's Entity-Relationship Diagram (ERD) to accommodate huge volumes of data, and creating a sophisticated admin dashboard using React JS.
-              </li>
-              <li>Orchestrating daily stand-ups and sprint planning sessions, implementing agile development practices resulting in a 25% increase in project velocity and on-time delivery of features.</li>
-              <li> Successfully obtained a $5000 grant from the Youth Self Employment Fund, covering 40% of the project budget.</li>
-              <li>Integrated ticketing services from 7 airlines, 10 event organizers, and 20 bus service providers, expanding ticketing options by 50% within 45 days.</li>
-              <li>Led the hiring process, conducted candidate interviews, and assembled a skilled and motivated team of engineers, establishing a dynamic environment where talents flourish.</li>
-              <li>
-                <b>Skills:</b>Node.Js, Express, Microservice Architecture, React JS, MySQL, Project Management, Agile Methodology.
-              </li>
-            </ul>
-<!-- Image Carousal -->
+          </article>
 
-                <div class="row">
-    </div>
-            
-          </div>
-          <div class="card-action">
-            <span>May 2023 - May 2024 | Remote, Nepal </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="//pudonepal.com.np" target="_blank"><img alt="Pudo logo"
-                    src="/assets/img/pudo logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="//pudonepal.com.np" target="_blank"
-                      class="teal-text hoverline">PUDO Nepal Pvt Ltd</a></span>
-                </p>
-              </div>
+          <article class="engineering-item">
+            <div class="item-meta">
+              <span class="item-date">2025</span>
+              <span class="item-category">Microservices</span>
             </div>
-            <div class="role brown-text text-darken-2">Project Lead</div>
-            <ul>
-              <li>
-Oversaw the development of a cutting-edge platform poised to revolutionize last-mile delivery solutions in Nepal, resulting in a projected 30% increase in delivery efficiency upon launch.
-              </li>
-              <li>
-              Analyzed market data and competitor offerings, influencing the integration of features predicted to enhance the delivery system's efficiency by 20%
-              </li>
-              <li>
-                Strategically located 170 PUDO stations, optimizing coverage to initially serve a potential 500,000+ customers within the densely populated Kathmandu city.
-              </li>
-              <li>Streamlined the station acquisition process laying the groundwork for extended service coverage upon the application's launch.</li>
-              <li> Collaborated on a revenue model, projecting a passive income stream for 2000 stations and 300 delivery workers, aiding 200 online small businesses in reaching their customers over the next 3 years. </li>
-              <li>Recognized for outstanding performance with a 5% allocation of stock options.</li>
-              <li>
-                <b>Skills:</b> Market Research and Competitor Analysis, Product Strategy and Roadmapping, User-Centered UX Design, Product Features Research
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Aug 2020 - July 2021 | Remote</span>
-          </div>
-        </div>
-
-        <!-- Experience 2 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.linkedin.com/company/karyathalo/about/" target="_blank"
-                     class="teal-text hoverline">Karyathalo IT and Web Solutions</a></span>
-                </p>
-              </div>
+            <h3 class="item-title">
+              <a
+                href="https://lecturely.ai/blogs/A_True_Micro_Service_Architecture"
+                target="_blank"
+                class="item-link"
+                >Ins and Outs of a True Microservice Architecture</a
+              >
+            </h3>
+            <p class="item-description">
+              Comprehensive analysis of building production-ready microservices
+              beyond the hype. Explores service boundaries, inter-service
+              communication patterns, distributed tracing, circuit breakers, and
+              the operational complexity that comes with distributed systems at
+              scale.
+            </p>
+            <div class="item-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">System Design</span>
+              <span class="tag">Architecture</span>
+              <span class="tag">Distributed Systems</span>
             </div>
-            <div class="role brown-text text-darken-2">Product Development Intern</div>
-            <ul>
-              <li>
-                Strategically managed project timelines, deliverables, and resource allocation in collaboration with the CEO, ensuring the successful and timely delivery of the <a href="//kathmandu.gov.np" target="_blank"
-                      class="teal-text hoverline">web application for Kathmandu Metropolitan City.</a>
-              </li>
-              <li>
-               Led requirements gathering and translated the vision into actionable goals, resulting in an anticipated 30% decrease in physical visits to Metropolitan offices.
-              </li>
-              <li>Conducted frequent meetings and demo sessions to showcase progress and gather feedback, ensuring seamless alignment with the client's expectations and making necessary adjustments.</li>
-              <li>Successfully deployed an accessible platform serving 5 million users, streamlining service delivery to Metro's inhabitants.</li>
-              <li>
-                <b>Skills:</b> Requirement Gathering, Project Management, Wordpress, PHP, MySQL
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>August 2020 - July 2021 | Kalikasthan, Kathmandu, Nepal</span>
-          </div>
-        </div>
+          </article>
 
-        <!-- Experience 3 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://play.google.com/store/apps/developer?id=NEM%C3%98+GAMES" target="_blank"
-                      class="teal-text hoverline"><img alt="Karela Games logo"
-                    src="/assets/img/karela-games-logo.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://play.google.com/store/apps/developer?id=NEM%C3%98+GAMES" target="_blank"
-                      class="teal-text hoverline">Karela Games</a></span>
-                </p>
-              </div>
+          <article class="engineering-item">
+            <div class="item-meta">
+              <span class="item-date">2025</span>
+              <span class="item-category">Mobile Development</span>
             </div>
-            <div class="role brown-text text-darken-2">Game Developer and Product Lead</div>
-            <ul>
-              <li>
-                Executed end-to-end game design and development in C# Unity, encompassing animation design, strategic game UX decisions, image/sprite construction, and intricate game mechanics design.
-              </li>
-              <li>
-                Orchestrated collaborative efforts resulting in the creation of three captivating games, contributing to a remarkable 1k+ organic Play Store downloads at an early age of 17. Games - <a href="https://play.google.com/store/apps/details?id=com.NemoCorp.FrustrationPill" target="_blank"
-                      class="teal-text hoverline">Frustration Pill</a>, <a href="https://play.google.com/store/apps/details?id=com.KarelaGames.HeySara" target="_blank"
-                      class="teal-text hoverline" >Texting and Walking</a>, <a href="https://play.google.com/store/apps/details?id=com.karelagames.newgame" target="_blank"
-                      class="teal-text hoverline" >Vertical Challenge</a>.
-              </li>
-              <li>Spearheaded product decisions, Integrated Facebook analytics to gather In-Game data, and conducted market research and competitor analysis, resulting in a 50% increase in downloads after the first update.</li>
-              <li>Collaborated with a prominent Publisher - Super Developers for prototyping new concepts while implementing Agile methodologies, streamlining project workflows, and ensuring on-time delivery of games.</li>
-              <li>
-                <b>Tools:</b> C#, Unity, Animation, Game Development, Graphics Design, UX Design, Project Management, Agile Methodologies
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Feb 2019 - Feb 2020 | Pokhara, Nepal</span>
-          </div>
+            <h3 class="item-title">
+              <a
+                href="https://lecturely.ai/blogs/Developing-a-Native-Bridge-Between-IOS-and-React-Native"
+                target="_blank"
+                class="item-link"
+                >Developing a Native Bridge Between React Native and Fabric</a
+              >
+            </h3>
+            <p class="item-description">
+              Technical deep-dive into building high-performance native bridges
+              connecting React Native's JavaScript layer with iOS native
+              capabilities. Covers Objective-C++ integration, synchronous vs
+              asynchronous bridge patterns, memory management, and performance
+              benchmarking for complex native modules.
+            </p>
+            <div class="item-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Native Bridge</span>
+              <span class="tag">Objective-C++</span>
+              <span class="tag">Fabric</span>
+            </div>
+          </article>
         </div>
-
       </div>
     </section>
 
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text black">Projects</h3>
+    <!-- Open Source Contributions Section -->
+    <section id="opensource" class="section">
       <div class="container">
-        <div class="row">
+        <h2 class="section-title">Open Source & Research</h2>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Doctors" src="/assets/img/doctors-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator black-text hoverline">Doctor Finder Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An web-app to find, rate, review and book appointments for doctors all over nepal
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Node.js, React JS, Mongo DB, Express, Mongoose</li>
-                  <li>Find doctors all over nepal</li>
-                  <li>Rate and Review doctors</li>
-                  <li>Book appointments</li>
-                  <li>Health blogs, featured doctors search by location</li>
-
-
-                </ul>
-                <div class="card-action">
-                </div>
-              </div>
+        <div class="opensource-grid">
+          <div class="opensource-item">
+            <div class="repo-header">
+              <h3 class="repo-name">
+                <a
+                  href="https://github.com/sajalregmi/react-native-markdown-editor"
+                  target="_blank"
+                  >React Native Markdown Editor</a
+                >
+              </h3>
+              <span class="repo-stats">
+                <span class="stat">📦 npm Package</span>
+              </span>
+            </div>
+            <p class="repo-description">
+              Comprehensive npm package for rendering markdown content in React
+              Native applications with full scientific equation LaTeX support.
+              Features custom parsing engine, performance-optimized rendering,
+              and native module integration for mathematical expressions.
+            </p>
+            <div class="repo-topics">
+              <span class="topic">React Native</span>
+              <span class="topic">Markdown</span>
+              <span class="topic">LaTeX</span>
+              <span class="topic">npm</span>
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Virus Bustors Game" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator black-text hoverline">Virus Bustors<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A TPP Game to shot down viruses.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C#, Unity, After Effects </li>
-
-                </ul>
-                <div class="card-action">
-               
-                </div>
-              </div>
+          <div class="opensource-item">
+            <div class="repo-header">
+              <h3 class="repo-name">
+                <a
+                  href="https://github.com/sajalregmi/react-native-pencil-kit-extended"
+                  target="_blank"
+                  >React Native Pencil Kit Extended</a
+                >
+              </h3>
+              <span class="repo-stats">
+                <span class="stat">🎨 Native Module</span>
+              </span>
+            </div>
+            <p class="repo-description">
+              Enhanced port of react-native-pencil-kit enabling granular
+              stroke-level operations. Supports individual stroke addition,
+              deletion, and management capabilities essential for building
+              real-time collaborative drawing applications with pixel-perfect
+              precision.
+            </p>
+            <div class="repo-topics">
+              <span class="topic">React Native</span>
+              <span class="topic">PencilKit</span>
+              <span class="topic">iOS</span>
+              <span class="topic">Real-time Collaboration</span>
             </div>
           </div>
 
-          <!-- 1. Django Project -->
+          <div class="opensource-item">
+            <div class="repo-header">
+              <h3 class="repo-name">
+                <a
+                  href="https://github.com/sajalregmi/gpt-semantic-cache"
+                  target="_blank"
+                  >GPT Semantic Cache</a
+                >
+              </h3>
+              <span class="repo-stats">
+                <span class="stat">⚡ LLM Tool</span>
+              </span>
+            </div>
+            <p class="repo-description">
+              Intelligent npm package for caching LLM responses based on
+              semantic similarity rather than exact string matching. Reduces API
+              costs and latency by 60-80% through vector embeddings, similarity
+              search, and context-aware cache invalidation strategies.
+            </p>
+            <div class="repo-topics">
+              <span class="topic">LLM</span>
+              <span class="topic">Caching</span>
+              <span class="topic">Vector Embeddings</span>
+              <span class="topic">npm</span>
+            </div>
+          </div>
 
-          <!-- VQA -->
-
-          <!-- Video Summarizer -->
-
-
-
-
-          <!-- Head Counting System -->
-
-          <!-- ************* -->
+          <div class="opensource-item">
+            <div class="repo-header">
+              <h3 class="repo-name">
+                <a href="https://arxiv.org/pdf/2411.05276" target="_blank"
+                  >GPT Semantic Cache: Research Paper</a
+                >
+              </h3>
+              <span class="repo-stats">
+                <span class="stat">📄 arXiv Preprint</span>
+              </span>
+            </div>
+            <p class="repo-description">
+              Academic research paper presenting novel approaches to LLM
+              response caching using semantic similarity metrics. Details
+              architecture, algorithms, and performance benchmarks showing
+              significant improvements in response time and cost reduction for
+              production AI applications.
+            </p>
+            <div class="repo-topics">
+              <span class="topic">Research</span>
+              <span class="topic">LLM</span>
+              <span class="topic">Semantic Caching</span>
+              <span class="topic">Academic</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text black">Skills</h3>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
       <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a href="https://arkios.ai" target="_blank"
+                    >Arkios.ai — Karela Technologies Inc.</a
+                  >
+                </h3>
+                <span class="timeline-date">July 2025 - Present</span>
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/javascript-39400.png" class="responsive-img" />Java Script
+              <h4 class="timeline-role">Lead Engineer & CEO</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Architected AI agent marketplace with human-like memory for
+                  centralized context management and autonomous workflows
+                </li>
+                <li>
+                  Designed infrastructure and system design for multi-agent
+                  orchestration; built terminal-based code editor and Chrome
+                  extension
+                </li>
+                <li>
+                  Led development of 15+ AI agents and the Arkios Code CLI/VS
+                  Code integration to deliver agentic software development
+                </li>
+                <li>
+                  Implemented agent runtime focused on reliability,
+                  observability, and secure execution for enterprise users
+                </li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">AI Agents</span>
+                <span class="skill-tag">System Design</span>
+                <span class="skill-tag">Infrastructure</span>
+                <span class="skill-tag">Product Leadership</span>
               </div>
-                            <div class="col s4 m2">
-                <img alt="" src="/assets/img/typescript-logo.png" class="responsive-img" />TypeScript
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a href="#" target="_blank">Lecturely AI</a>
+                </h3>
+                <span class="timeline-date">Jan 2025 - Present</span>
               </div>
-                            <div class="col s4 m2">
-                <img alt="" src="/assets/img/matlab-logo.png" class="responsive-img" />Matlab
+              <h4 class="timeline-role">LLM Engineer (Remote)</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Engineered multi-agent LLM workflows with prompt-relevant RAG
+                  via knowledge graphs, improving response quality by 20%
+                </li>
+                <li>
+                  Built React Native–to–Objective-C++ bridge enabling PencilKit
+                  doodle and advanced PDF annotation features
+                </li>
+                <li>
+                  Implemented real-time collaborative note-taking using OT/CRDTs
+                  with stroke extraction and merging algorithms
+                </li>
+                <li>
+                  Established CI/CD, deployed to Amazon ECS with autoscaling for
+                  zero-downtime releases and high availability
+                </li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">LLMs</span>
+                <span class="skill-tag">RAG</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">iOS</span>
+                <span class="skill-tag">OT/CRDT</span>
+                <span class="skill-tag">AWS ECS</span>
               </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a href="//creatiphe.com" target="_blank">Creatiphe LLC</a>
+                </h3>
+                <span class="timeline-date">May 2024 - July 2024</span>
+              </div>
+              <h4 class="timeline-role">Entrepreneur in Residence</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Refined business evaluation process with rigorous testing
+                  strategies and clear success metrics, fostering data-driven
+                  culture
+                </li>
+                <li>
+                  Developed MVPs with freelancers and implemented testing
+                  strategies, enhancing engagement and conversions by 30%
+                </li>
+                <li>
+                  Incubated talent agency bridging Nepalese tech talent with
+                  global opportunities, overseeing recruitment for 200
+                  candidates
+                </li>
+                <li>
+                  Increased Happy O'Clock revenue by 10% through strategic
+                  automation and retention strategies
+                </li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">Product Management</span>
+                <span class="skill-tag">Automation</span>
+                <span class="skill-tag">Project Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a href="//getticketsewa.com" target="_blank"
+                    >Ticketsewa Pvt Ltd.</a
+                  >
+                </h3>
+                <span class="timeline-date">May 2023 - May 2024</span>
+              </div>
+              <h4 class="timeline-role">Co-Founder and Engineer</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Led development of comprehensive ticketing platform using
+                  Node.js microservices and React admin dashboard
+                </li>
+                <li>
+                  Orchestrated agile practices achieving 25% increase in project
+                  velocity and on-time delivery
+                </li>
+                <li>
+                  Secured $5000 grant covering 40% of project budget from Youth
+                  Self Employment Fund
+                </li>
+                <li>
+                  Integrated services from 7 airlines, 10 event organizers, and
+                  20 bus providers in 45 days
+                </li>
+                <li>Built and scaled engineering team from ground up</li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">Agile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a href="//pudonepal.com.np" target="_blank"
+                    >PUDO Nepal Pvt Ltd</a
+                  >
+                </h3>
+                <span class="timeline-date">Aug 2020 - July 2021</span>
+              </div>
+              <h4 class="timeline-role">Project Lead</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Oversaw development of revolutionary last-mile delivery
+                  platform, projected to increase efficiency by 30%
+                </li>
+                <li>
+                  Strategically located 170 PUDO stations to serve 500K+
+                  potential customers in Kathmandu
+                </li>
+                <li>
+                  Conducted market research influencing feature integration for
+                  20% efficiency improvement
+                </li>
+                <li>
+                  Collaborated on revenue model projecting support for 2000
+                  stations and 300 delivery workers
+                </li>
+                <li>Awarded 5% stock options for outstanding performance</li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">Market Research</span>
+                <span class="skill-tag">Product Strategy</span>
+                <span class="skill-tag">UX Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a
+                    href="https://www.linkedin.com/company/karyathalo/about/"
+                    target="_blank"
+                    >Karyathalo IT and Web Solutions</a
+                  >
+                </h3>
+                <span class="timeline-date">Aug 2020 - July 2021</span>
+              </div>
+              <h4 class="timeline-role">Product Development Intern</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Managed delivery of e-governance web application for Kathmandu
+                  Metropolitan City serving 5 million users
+                </li>
+                <li>
+                  Led requirements gathering and vision translation, reducing
+                  physical office visits by 30%
+                </li>
+                <li>
+                  Conducted frequent demos ensuring alignment with client
+                  expectations
+                </li>
+                <li>
+                  Successfully deployed accessible platform streamlining
+                  municipal services
+                </li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">Requirements Gathering</span>
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">WordPress</span>
+                <span class="skill-tag">PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-company">
+                  <a
+                    href="https://play.google.com/store/apps/developer?id=NEM%C3%98+GAMES"
+                    target="_blank"
+                    >Karela Games</a
+                  >
+                </h3>
+                <span class="timeline-date">Feb 2019 - Feb 2020</span>
+              </div>
+              <h4 class="timeline-role">Game Developer and Product Lead</h4>
+              <ul class="timeline-accomplishments">
+                <li>
+                  Executed end-to-end game development in C# Unity with 1K+
+                  organic downloads
+                </li>
+                <li>
+                  Orchestrated creation of three games: Frustration Pill,
+                  Texting and Walking, Vertical Challenge
+                </li>
+                <li>
+                  Integrated Facebook analytics and conducted market research
+                  increasing downloads by 50%
+                </li>
+                <li>
+                  Collaborated with publisher Super Developers implementing
+                  Agile methodologies
+                </li>
+              </ul>
+              <div class="skills-used">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Game Development</span>
+                <span class="skill-tag">Analytics</span>
               </div>
             </div>
           </div>
         </div>
-
-                <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Frameworks</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/nodejs.png" class="responsive-img" />Node.Js
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/express-logo.png" class="responsive-img" />Express Js
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/react-logo-png-transparent.png" class="responsive-img" />React JS
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/unity-69-logo-png-transparent.png" class="responsive-img" />Unity
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Libraries</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <!-- Engineering tools -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Engineering Tools: </h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/autocad-logo.png" class="responsive-img" />AutoCAD
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/fusion-logo.webp" class="responsive-img" />Fusion360
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/solidworks-logo.png" class="responsive-img" />Solid Works
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/arduino-logo.png" class="responsive-img" />Arduino
-              </div>
-
-                            <div class="col s4 m2">
-                <img alt="" src="/assets/img/ltspice-logo.png" class="responsive-img" />LTspice
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- certifications -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title black-text">Machine Learning (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title black-text">Algorithms (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
       </div>
     </section>
 
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text black">Education</h3>
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.asu.edu/" target="_blank" class="teal-text hoverline">Arizona State University</a></span>
-                </p>
-                <p class="brown-text">Tempe, USA</p>
-                <p>
-                  <b>Degree: </b>Bachelors of Science in Engineering in Biomedical Engineering      
-                  <br>
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Product Design and Development</li>
-                    <li>Statistcs</li>
-                    <li>Calculus</li>  
-                    <li>Linear Algebra</li>
-                    <li>Signals and Systems</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-
-            
+        <div class="footer-content">
+          <p>&copy; 2024 Sajal Regmi. Built with engineering precision.</p>
+          <div class="footer-links">
+            <a href="mailto:sajalregmi4@gmail.com">Email</a>
+            <a href="https://github.com/sajalregmi" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/sajalregmi" target="_blank"
+              >LinkedIn</a
+            >
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text black">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Email Sajal" href="mailto:sajalregmi4@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Sajal" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Sajal" href="mailto:sajalregmi4@gmail.com"
-              class="hoverline">sajalregmi4@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Sajal on GitHub" href="http://github.com/sajalregmi" target="_blank"
-            data-position="top" data-tooltip="View Sajal on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Sajal on Github" href="http://github.com/sajalregmi" class="hoverline"
-              target="_blank">github.com/sajalregmi</a></a>
-        </p>
-        <p>
-          <a aria-label="View Sajal on LinkedIn" href="http://linkedin.com/in/sajalregmi" target="_blank"
-            data-position="top" data-tooltip="View Sajal on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Sajal on LinkedIn" href="http://linkedin.com/in/sajalregmi"
-              class="hoverline" target="_blank">linkedin.com/in/sajalregmi</a></a>
-        </p>
-      </div>
-    </section>
-  </main>
+    <!-- Scripts -->
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Product", "Engineering", "Innovation"],
-      loop: true,
-      typeSpeed: 90,
-      backSpeed: 50
-    });
-  </script>
+      // Add scroll-based navigation highlighting
+      window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-menu a");
 
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").slice(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+      // Typing effect for hero code
+      const heroCode = document.querySelector(".hero-code pre code");
+      if (heroCode) {
+        // Add subtle glow effect on hover
+        heroCode.parentElement.addEventListener("mouseenter", () => {
+          heroCode.style.textShadow = "0 0 8px rgba(100, 200, 255, 0.3)";
+        });
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const track = document.querySelector('.carousel-track');
-    const items = document.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-    const itemWidth = items[0].clientWidth;
-    const itemsInView = 3; // Number of visible images
-    const autoSlideInterval = 1500; // Auto-slide interval in milliseconds
-    let position = 0;
-
-    // Function to update carousel position
-    function updateCarouselPosition() {
-      track.style.transform = `translateX(${position}px)`;
-    }
-
-    // Function to move carousel to the next item
-    function moveNext() {
-      position -= itemWidth;
-      if (position < -(itemWidth * (items.length - itemsInView))) position = 0;
-      updateCarouselPosition();
-    }
-
-    // Auto-slide function
-    function autoSlide() {
-      moveNext();
-      setTimeout(autoSlide, autoSlideInterval);
-    }
-
-    // Initialize auto-slide
-    setTimeout(autoSlide, autoSlideInterval);
-
-    // Event listeners for prev and next buttons
-    prevButton.addEventListener('click', () => {
-      position += itemWidth;
-      if (position > 0) position = -(itemWidth * (items.length - itemsInView));
-      updateCarouselPosition();
-    });
-
-    nextButton.addEventListener('click', moveNext);
-  });
-</script>
-
-
-
-
-  
-</body>
-
+        heroCode.parentElement.addEventListener("mouseleave", () => {
+          heroCode.style.textShadow = "none";
+        });
+      }
+    </script>
+  </body>
 </html>
