@@ -1166,22 +1166,22 @@
               <h4 class="timeline-role">Engineer</h4>
               <ul class="timeline-accomplishments">
                 <li>
-                  Built an IDE purpose-built for firmware engineers featuring a
-                  hardware-level debug tool (OpenOCD-backed) for full MCU
-                  control, a crash analyzer for rapid fault diagnosis, and a
-                  serial monitor used daily for real-time log streaming
+                  Built a full-featured IDE for firmware engineers with
+                  integrated hardware debugging, crash analysis, and real-time
+                  serial log monitoring—enabling end-to-end embedded development
+                  in a single tool
                 </li>
                 <li>
-                  Implemented variable watch for live value tracking during
-                  execution, firmware flash for one-click code upload with
-                  verification, and an RTOS inspector displaying task states and
-                  per-task stack usage metrics
+                  Implemented live variable watch, firmware flashing with
+                  verification, and RTOS inspection (task states and per-task
+                  stack usage) to give engineers deep runtime visibility into
+                  embedded systems
                 </li>
                 <li>
-                  Developed a function profiler for cycle-accurate performance
-                  analysis, automated USB port detection for zero-config device
-                  connection, and an OpenOCD log viewer to diagnose debug
-                  adapter issues
+                  Developed a function profiler for performance analysis,
+                  automated device connection detection, and debug adapter
+                  diagnostics tooling to accelerate the firmware development
+                  cycle
                 </li>
                 <li>
                   Engineered low-latency C++ serial communication drivers
@@ -1189,15 +1189,14 @@
                   with minimal protocol overhead
                 </li>
                 <li>
-                  Architected the full debug orchestration pipeline supporting
-                  multiple hardware programmers with built-in flash verification
-                  and serial-based test automation
+                  Architected a debug orchestration pipeline supporting multiple
+                  hardware programmers with built-in flash verification and
+                  serial-based test automation
                 </li>
               </ul>
               <div class="skills-used">
                 <span class="skill-tag">C++</span>
                 <span class="skill-tag">Embedded Systems</span>
-                <span class="skill-tag">OpenOCD</span>
                 <span class="skill-tag">RTOS</span>
                 <span class="skill-tag">Serial Communication</span>
                 <span class="skill-tag">Low-Latency Drivers</span>
@@ -1220,54 +1219,45 @@
               <h4 class="timeline-role">Lead Engineer & CEO</h4>
               <ul class="timeline-accomplishments">
                 <li>
-                  Led engineering team to design and build Arkios Enterprise—an
-                  AI-powered platform for organizations to onboard teams and
-                  leverage AI agents for operations, automation, and software
-                  development; enforces a role-based access model (owner →
-                  admin → member → viewer) with enterprise-grade security
+                  Led the engineering team to design and build an AI-powered
+                  enterprise platform enabling organizations to onboard teams
+                  and leverage AI agents for operations, automation, and
+                  software development, with a full role-based access control
+                  model and enterprise-grade security
                 </li>
                 <li>
-                  Architected Arkios Foundry, a Software Factory module that
-                  provisions fully isolated per-enterprise cloud environments
-                  (EC2, RDS, S3, Cloudflare) via Terraform, enabling an AI agent
-                  to scaffold, build, run, and iterate on full-stack TypeScript
-                  applications (Express + React) through natural language
+                  Architected Software Foundry—a software factory module that
+                  provisions fully isolated, per-tenant cloud environments via
+                  infrastructure-as-code, allowing an AI agent to scaffold,
+                  build, and iterate on full-stack applications through natural
+                  language
                 </li>
                 <li>
-                  Built a Bun-compiled gRPC executor binary (115 MB, Linux x64)
-                  baked into a custom AMI exposing 27 RPCs (file I/O, command
-                  execution, process management, scaffolding, dev/build/deploy
-                  lifecycle, nginx routing, DB proxy) — secured with mTLS and
-                  reachable only within the VPC via security-group rules
+                  Designed a high-throughput distributed RPC communication layer
+                  between platform servers and per-tenant compute nodes, with
+                  mutual TLS authentication and network-level isolation
                 </li>
                 <li>
-                  Designed EC2 → multi-EC2 gRPC communication architecture
-                  between the Foundry server and per-enterprise executor
-                  binaries; project URLs served through Cloudflare Tunnel →
-                  nginx → Vite/Express with optional Cloudflare Access policies
-                  for team-only app isolation
+                  Implemented zero-trust security architecture: certificate-based
+                  service authentication, automated secrets management at
+                  provisioning time, and full infrastructure lifecycle
+                  management (provision and teardown per tenant)
                 </li>
                 <li>
-                  Implemented enterprise-grade security: mTLS cert-based
-                  executor auth, secrets injected at boot via AWS SSM Parameter
-                  Store + user_data.sh, and Terraform-managed infrastructure
-                  provisioned and torn down per enterprise
-                </li>
-                <li>
-                  Engineered the core Enterprise Server (Express.js) handling
-                  authentication, billing, team management, and AI agent
-                  orchestration, backed by PostgreSQL, Redis, and AWS
+                  Engineered the core platform server handling authentication,
+                  billing, team management, and AI agent orchestration, backed
+                  by relational and in-memory data stores on cloud infrastructure
                 </li>
               </ul>
               <div class="skills-used">
                 <span class="skill-tag">Node.js / Express.js</span>
-                <span class="skill-tag">gRPC / mTLS</span>
-                <span class="skill-tag">AWS (EC2, RDS, S3)</span>
+                <span class="skill-tag">gRPC</span>
+                <span class="skill-tag">AWS</span>
                 <span class="skill-tag">Terraform</span>
                 <span class="skill-tag">PostgreSQL</span>
                 <span class="skill-tag">Redis</span>
-                <span class="skill-tag">Cloudflare</span>
                 <span class="skill-tag">AI Agents</span>
+                <span class="skill-tag">Distributed Systems</span>
                 <span class="skill-tag">Enterprise Architecture</span>
                 <span class="skill-tag">TypeScript</span>
               </div>
